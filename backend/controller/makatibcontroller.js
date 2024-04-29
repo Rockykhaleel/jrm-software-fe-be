@@ -16,8 +16,10 @@ module.exports = {
       salary,
       booksdist,
       expensesdet,
+      imagePath,
       userId,
     } = req.body;
+
     const newCategories = new Makatibs({
       nofmakatib,
       makatibname,
@@ -26,6 +28,7 @@ module.exports = {
       salary,
       booksdist,
       expensesdet,
+      image: imagePath, // Include the image path in the newCategories object
       userId,
     });
     try {

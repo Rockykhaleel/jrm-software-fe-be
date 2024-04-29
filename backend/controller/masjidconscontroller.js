@@ -10,14 +10,23 @@ const CsvParser = require("json2csv").Parser;
 module.exports = {
   //{ plan, budget, status,etocompletion,facilities, userId }
   addmasjidcons: async (req, res) => {
-    const { plan, budget, status, etocompletion, facilities, userId } =
-      req.body;
+    const {
+      plan,
+      budget,
+      status,
+      etocompletion,
+      facilities,
+      imagePath,
+      userId,
+    } = req.body;
     const newCategories = new MasjidCons({
       plan,
       budget,
       status,
       etocompletion,
       facilities,
+      image: imagePath,
+
       userId,
     });
     try {

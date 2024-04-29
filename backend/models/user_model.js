@@ -28,15 +28,15 @@ const userSchema = new mongoose.Schema(
     },
     memberscount: {
       type: Number,
-      required: true,
+      required: false,
     },
     designation: {
       type: String,
-      required: true,
+      required: false,
     },
     account: {
       type: String,
-      required: true,
+      required: false,
     },
     role: {
       type: String,

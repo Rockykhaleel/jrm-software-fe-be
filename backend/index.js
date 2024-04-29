@@ -55,6 +55,10 @@ app.use("/api/ann", require("./routes/user_AllYears"));
 
 app.use("/api/admin", require("./routes/admin_Dashboard"));
 
+app.use("/api/upload", require("./routes/upload_image"));
+
+app.use("/Uploads", express.static(path.join(__dirname, "./Uploads")));
+
 app.listen("8080", () => {
   console.log("Server Started...");
 });

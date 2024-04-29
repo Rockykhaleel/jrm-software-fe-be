@@ -9,6 +9,10 @@ const makatibSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    image: {
+      type: String,
+      required: false,
+    },
     stupmakatib: {
       type: Number,
       required: true,
